@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+.background {
+    background: linear-gradient(-45deg, #35577D, #141E30);
+}
+/* 배경화면 */
+
+.frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    height: 750px;
+}
+
+.display {
+    display: none;
+}
+/* body and frame */
+
+.left {
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.title {
+    grid-row: 1 / span 1;
+}
+
+.title h1 {
+    display: inline-block;
+    font-family: cursive;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.title p {
+    display: inline-block;
+    font-family: cursive;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.list {
+    grid-row: 2 / span 1;
+    padding: 20px;
+}
+
+.list h2 {
+    color: #fff;
+}
+
+.todoForm {
+    font-family: cursive;
+    color: #fff;
+}
+
+.todoForm input {
+    background-color: #aaa;
+}
+
+.todoList {
+    font-family: cursive;
+    color: #fff;
+}
+
+
+.btn_style {
+    margin-right: 10px;
+    background-color: #777;
+    color: #fff;
+}
+/* left side */
+
+.right {
+    grid-column: 2 / span 1;
+    display: grid;
+    background-color: rgba(200, 200, 200, .3);
+    border: 1px #fff solid;
+    border-radius: 10px;
+    grid-template-rows: .3fr .3fr .3fr 5.5fr .5fr;
+}
+
+.goal {
+    grid-row: 1 / span 1;
+    text-align: center;
+}
+
+.goal h2 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.goal input {
+    background-color: #aaa;
+}
+
+.goal span {
+    font-family: cursive;
+    font-size: 20px;
+    color: #fff;
+}
+
+.total {
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.saved {
+    grid-column: 1 / span 1;
+    color: #fff;
+    padding: 10px;
+}
+
+.saved h4 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.saved span {
+    font-family: cursive;
+    color: #fff;    
+}
+
+.passed {
+    grid-column: 2 / span 1;
+    color: #fff;
+    padding: 10px;
+}
+
+.passed h4 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.passed span {
+    font-family: cursive;
+    color: #fff;
+}
+
+.remain {
+    grid-row: 3 / span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.remain_money {
+    grid-column: 1 / span 1;
+    color: #fff;
+    padding: 10px;
+}
+
+.remain_money h4 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.remain_money span {
+    font-family: cursive;
+    color: #fff;
+}
+
+.remain_month {
+    grid-column: 2 / span 1;
+    color: #fff;
+    padding: 10px;
+}
+
+.remain_month h4 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.remain_month span {
+    font-family: cursive;
+    color: #fff;
+}
+
+.monthly {
+    grid-row: 4 / span 1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+    color: #fff;
+}
+
+.first {
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-area: repeat(3, 1fr) / repeat(13, 1fr);
+}
+
+.firstY {
+    grid-area: 1 / 1 / span 1 / span 13;
+}
+
+.second {
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-area: repeat(3, 1fr) / repeat(13, 1fr);
+}
+
+.secondY {
+    grid-area: 1 / 1 / span 1 / span 13;
+}
+
+.last {
+    grid-row: 3 / span 1;
+    display: grid;
+    grid-area: repeat(3, 1fr) / repeat(13, 1fr);
+}
+
+.lastY {
+    grid-area: 1 / 1 / span 1 / span 13;
+}
+
+.average {
+    grid-row: 5 / span 1;
+    background-color: red;
+}

@@ -14,6 +14,11 @@
                 <h1 class="js-clockTitle clockTitle">00:00:00</h1>
                 <p class="js-dateTitle dateTitle">MON, Jan 1, 2020</p>
             </div>
+            <form class="js-goal goal">
+                <h2>목표 금액 : </h2>
+                <input type="text" placeholder="목표 금액">
+                <span>0.00만원</span>
+            </form>
             <div class="js-list list">
                 <h2>Saving log</h2>
                 <form class="js-todoForm todoForm">
@@ -24,15 +29,10 @@
             </div>
         </div>
         <div class="right">
-            <form class="js-goal goal">
-                <h2>목표 금액 : </h2>
-                <input type="text" placeholder="목표 금액">
-                <span>0.00원</span>
-            </form>
             <div class="total">
                 <div class="saved">
                     <h4>저축 총액 : </h4>
-                    <span>0.00원</span>
+                    <span>0.00만원</span>
                 </div>
                 <div class="passed">
                     <h4>저축 개월수 : </h4>
@@ -42,7 +42,7 @@
             <div class="remain">
                 <div class="remain_money">
                     <h4>남은 총액 : </h4>
-                    <span>0.00원</span>
+                    <span>0.00만원</span>
                 </div>
                 <div class="remain_month">
                     <h4>남은 개월수 : </h4>
@@ -52,20 +52,20 @@
             <div class="monthly">
                 <div class="first">
                     <div class="firstY">2020년</div>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                    <div>10</div>
-                    <div>11</div>
-                    <div>12</div>
-                    <div>합계</div>
-                    <div class="jan"></div>
+                    <div class="month">1</div>
+                    <div class="month">2</div>
+                    <div class="month">3</div>
+                    <div class="month">4</div>
+                    <div class="month">5</div>
+                    <div class="month">6</div>
+                    <div class="month">7</div>
+                    <div class="month">8</div>
+                    <div class="month">9</div>
+                    <div class="month">10</div>
+                    <div class="month">11</div>
+                    <div class="month">12</div>
+                    <div class="sum">합계</div>
+                    <div class="jan "></div>
                     <div class="feb"></div>
                     <div class="mar"></div>
                     <div class="apr"></div>
@@ -82,19 +82,19 @@
 
                 <div class="second">
                     <div class="secondY">2021년</div>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                    <div>10</div>
-                    <div>11</div>
-                    <div>12</div>
-                    <div>합계</div>
+                    <div class="month">1</div>
+                    <div class="month">2</div>
+                    <div class="month">3</div>
+                    <div class="month">4</div>
+                    <div class="month">5</div>
+                    <div class="month">6</div>
+                    <div class="month">7</div>
+                    <div class="month">8</div>
+                    <div class="month">9</div>
+                    <div class="month">10</div>
+                    <div class="month">11</div>
+                    <div class="month">12</div>
+                    <div class="sum">합계</div>
                     <div class="jan"></div>
                     <div class="feb"></div>
                     <div class="mar"></div>
@@ -112,19 +112,19 @@
 
                 <div class="last">
                     <div class="lastY">2022년</div>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                    <div>10</div>
-                    <div>11</div>
-                    <div>12</div>
-                    <div>합계</div>
+                    <div class="month">1</div>
+                    <div class="month">2</div>
+                    <div class="month">3</div>
+                    <div class="month">4</div>
+                    <div class="month">5</div>
+                    <div class="month">6</div>
+                    <div class="month">7</div>
+                    <div class="month">8</div>
+                    <div class="month">9</div>
+                    <div class="month">10</div>
+                    <div class="month">11</div>
+                    <div class="month">12</div>
+                    <div class="sum">합계</div>
                     <div class="jan"></div>
                     <div class="feb"></div>
                     <div class="mar"></div>
@@ -141,11 +141,18 @@
                 </div>
             </div>
             <div class="average">
-                average money
+                <form class="js-ave_form ave_form">
+                    <input class="txt" type="text" placeholder="Adding deposit(만원)">
+                    <input class="btn" type="button" value="Delete">
+                </form>
+                <div class="js-ave_deposit ave_deposit">
+                    <h4>평균 필요 저축액 : </h4>
+                    <span></span>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <script src="moneyLog.js"></script>
     <script src="calculator.js"></script>
     <script src="bg.js"></script>

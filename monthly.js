@@ -82,6 +82,8 @@ function sum() {
         total_22 = 0;
     }
     total_last.innerHTML = total_22;
+
+    return total_20, total_21, total_22;
 }
 
 function paintDeposit(value) {

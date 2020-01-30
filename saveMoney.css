@@ -303,4 +303,14 @@ body {
 .ave_deposit {
     margin: auto 0;
 }
+
+.ave_deposit h4 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ave_deposit span {
+    font-family: cursive;
+    color: #fff;
+}
 /* average */
